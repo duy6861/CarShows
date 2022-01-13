@@ -1,0 +1,470 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+html{
+    
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+html {
+    scroll-behavior: smooth;
+  }
+#main{
+    
+}
+.open{
+    display: flex !important;
+}
+.clear{
+    clear: both;
+}
+.mt-8{
+    margin-top: 8px;
+}
+.mt-16{
+    margin-top: 16px;
+}
+.text-white{
+    color: #fff !important;
+}
+.text-center{
+    text-align: center !important;
+}
+.rows{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.rows::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+float: left;
+padding-left:8px ;
+padding-right: 8px;
+
+}
+.col-thir{
+    width: 33.333333% ;
+    
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+/* Header */
+#header{
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    /* overflow: hidden; */
+}
+#nav{
+    display: inline-block;
+}
+#nav>li{
+    display: inline-block;
+}
+#nav li{
+    list-style-type: none;
+    position: relative;
+
+}
+#nav>li>a{
+    color: #fff;
+    text-transform: uppercase;
+}
+#nav li a{
+    
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+    
+}
+#nav li:hover .subnav{
+display: block;
+}
+
+#nav >li:hover > a,
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+#nav .subnav{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+#nav .subnav a{
+    color: black;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.nav-arrow-down{
+    font-size: 14px;
+}
+#header .mobile-menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+#header .mobile-menu,
+#header .search-button{
+float: right;
+padding: 0 21px;
+
+}
+
+#header .search-button:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+#header .mobile-menu:hover{
+   
+    background-color: #ccc;
+    
+}
+#header .mobile-menu:hover .menu-icon{
+    color: black;
+   
+}
+#header .menu-icon,
+#header .search-icon{
+color: #fff;
+font-size: 20px;
+line-height: 46px;
+}
+
+/* end Header */
+.mySlides{
+    display: none;
+}
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    /* background: url('/Assets/img/slidecar1.jpg') top center / cover no-repeat */
+    background: url('https://cartimes.vn/images/20/12/23/2021-mercedes-amg-gt-black-series-0.jpg') top center / cover no-repeat
+}
+#slider2{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    /* background: url('/Assets/img/slidecar1.jpg') top center / cover no-repeat */
+    background: url('https://autopro8.mediacdn.vn/2020/9/23/2021-bmw-m4-exterior-1-16008529296251044856632.jpg') top center / cover no-repeat
+}
+#slider3{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    /* background: url('/Assets/img/slidecar1.jpg') top center / cover no-repeat */
+    background: url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/2021-audi-r8-mmp-1-1603746624.jpg?crop=0.756xw:0.568xh;0.220xw,0.316xh&resize=1200:*') top center / cover no-repeat
+}
+ .text-content{
+position: absolute;
+bottom: 47px;
+color: #fff;
+width: 100%;
+text-align: center;
+}
+ .text-heading{
+font-weight: 500;
+font-size: 24px;
+text-shadow: 0px 0px 1.5px rgb(148, 56, 56) ;
+}
+ .text-description{
+font-size: 15px;
+margin-top: 20px;
+text-shadow: 0px 0px 5px rgb(139, 23, 23) ;
+/* text-shadow: 0px 0px 2px #FF0000 */
+}
+
+#content{
+   
+}
+#content .content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0px 112px;
+    padding-right: 16px;
+    padding-left: 16px;
+}
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+
+}
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    line-height: 1.4;
+    opacity: 0.6;
+}
+#content .about{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+}
+#content .part-list{
+    margin-top: 48px;
+}
+
+#content .part-name{
+    font-size: 15px;
+}
+#content .part-img{
+    margin-top: 15px;
+    width: 154px;
+    height: 218px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+/* CarShow-section */
+.carshow{
+    background-color:rgb(36, 29, 29);
+}
+.ticket-list{
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.ticket-list li{
+    font-size: 15px;
+    padding: 12px 16px;
+    border-bottom: 1px solid rgb(36, 29, 29);
+    color: #757575;
+    list-style-type: none;
+}
+.ticket-list .sold-out{
+    font-style: italic;
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 20px;
+
+}
+.ticket-list .quantity{
+float: right;
+width: 28px;
+height: 28px;
+color: #fff;
+background-color: black;
+text-align: center;
+line-height: 28px;
+border-radius: 50%;
+}
+/* place */
+.place-list{
+    
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+.place-img{
+width: 100%;
+display: block;
+height: 172px;
+border-radius: 8px 8px 0 0;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-content{
+background-color: #fff;
+font-size: 15px;
+padding: 16px;
+border-radius: 0 0 8px 8px ;
+}
+.place-heading{
+font-size: 15px;
+font-weight: 550;
+}
+.place-time{
+    margin-top: 15px;  
+    opacity: 0.6;  
+}
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    border-radius: 4px;
+
+}
+.place-buy-btn:hover{
+    background-color: rgb(179, 170, 170);
+    color: black;
+}
+/* Contact_form */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;     
+}
+.contact-form{
+    font-size: 18px;
+}
+.contact-form .form-control{
+padding: 18px;
+border: 1px solid #ccc;
+width: 100%;
+}
+.contact-form .form-sumit{
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    float: right;
+    border-radius: 4px;
+}
+.contact-form .form-sumit:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/* Cars-section */
+.Cars-section img{
+    width: 100%;
+}
+
+/* footer-section */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 24px;
+}
+.socials{
+    margin-bottom: 16px;
+}
+.socials a{
+    color: rgba(0, 0, 0, 0.4);
+}
+.ticket-modal{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.modal-container{
+    border-radius: 15px;
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    position: relative;
+    max-width: calc(100%-32px);
+    animation: modal-fade-in ease .6s;
+}
+.modal-header{
+    /* background-color: rgb(92, 83, 83); */
+    background-image: url(https://img3.stockfresh.com/files/i/iaroslava/m/43/8930165_stock-vector-geometric-seamless-pattern-background-simple-graphic-print-vector-repeating-line-texture.jpg);
+    background-size: 30px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    
+}
+.modal-header > i{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-close:hover{
+    background-color: red;
+    opacity: 1;
+
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    font-size: 15px;
+    
+}
+.modal-input{
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+#buy-tickets{
+    background-color: rgb(34, 121, 80);
+   
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 12px;
+    cursor: pointer;
+}
+#buy-tickets:hover{
+    opacity: 0.9;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: rgb(34, 182, 113);
+}
+@keyframes modal-fade-in{
+    from{
+        opacity: 0.6;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
