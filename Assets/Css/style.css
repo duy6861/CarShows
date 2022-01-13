@@ -373,6 +373,7 @@ width: 100%;
     color: rgba(0, 0, 0, 0.4);
 }
 .ticket-modal{
+    z-index: 2;
     position: fixed;
     top: 0;
     bottom: 0;
